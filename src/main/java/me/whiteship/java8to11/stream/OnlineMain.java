@@ -1,4 +1,4 @@
-package me.whiteship.java8to11;
+package me.whiteship.java8to11.stream;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +26,8 @@ public class OnlineMain {
                 .filter(oc -> !oc.isClosed())
                 .forEach(oc -> System.out.println(oc.getId()));
         System.out.println("--------------------");
-        // 임의의 객체에 인스턴스 메소드 참조(Predicate, java 11)
+
+        // 매개값을 조사해서 true 또는 false를 리턴하는 역할(Functional Interface)
         springClasses.stream()
                 .filter(Predicate.not(OnlineClass::isClosed))
                 .forEach(oc -> System.out.println(oc.getId()));

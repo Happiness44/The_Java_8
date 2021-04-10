@@ -1,4 +1,4 @@
-package me.whiteship.java8to11;
+package me.whiteship.java8to11.stream;
 
 public class OnlineClass {
     private Integer id;
